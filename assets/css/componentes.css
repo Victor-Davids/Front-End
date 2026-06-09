@@ -17,15 +17,6 @@
   color: var(--light);
 }
 
-.text-light {
-  font-family: var(--text);
-  font-size: var(--text-size);
-  font-weight: 800;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  color: var(--light);
-}
-
 /* Formatação dos Botões */
 .btn {
   color: var(--primary);

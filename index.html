@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./assets/css/componentes.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+
     <title>Marte Verde</title>
 </head>
+
 <body>
 
     <header>
@@ -26,7 +28,7 @@
     </header>
 
     <main>
-        <section id="banner" class="flex">>
+        <section id="banner" class="flex">
             <h1 class="title">Inovação e Descoberta</h1>
             <p class="text-light">Uma jornada para o além</p>
         </section>
@@ -42,7 +44,7 @@
                 </p>
                 
         </section>
-        
+
         <section id="tecnologia" class="flex">
             <div class="info">
                 <h2 class="title">Novas Tecnologias</h2>
@@ -99,25 +101,53 @@
             <img src="./assets/imagens/beneficios.png" alt="planta detro de um frasco em marte ">
         </section>
 
-         
-        <section id="aplicacaoDiaria">
-            <h2 class="title">Aplicação no Dia a Dia</h2>
+        <section id="aplicacaoDiaria" class="collumn">
+        <h2 class="title">Aplicação no Dia a Dia</h2>
 
-            <p class="text">
-                    O estudo do bioma abre portas para o avanço da agriculruta e aproveitamento de recursos na agronomia.
-            </p>
-            <p class="text">
-                    Exemplos disso sao avanços em energia verde, agricultura sustentavel e purificação de agua.
+        <p class="text">
+            O estudo do bioma abre portas para o avanço da agricultura e aproveitamento de recursos na agronomia.
+        </p>
 
-            <figure class="flex">
-                <img src="./assets/imagens/painel_solar.jpg" alt="Painel Solar">
+        <p class="text">
+            Exemplos disso são avanços em energia verde, agricultura sustentável e purificação de água.
+        </p>
 
-                <img src="./assets/imagens/estufa.jpg" alt="Estufa">
+        <figure class="collumn">
+            <img id="slide" src="./assets/imagens/painel_solar.jpg" width="500">
 
-                <img src="./assets/imagens/Sistema_agua.jpg" alt="Sistema de Água">
-            </figure>
-
+            <button onclick="anterior()">◀Anterior</button>
+            <button onclick="proximo()">Próximo▶</button>
+        </figure>
         </section>
+
+        <section id="quiz-section">
+        <h2>Quiz Marte Verde</h2>
+        <button onclick="tema('#ff9800')">laranja</button>
+        <button onclick="tema('#000001')">Escuro</button>
+        <button onclick="tema('#2f2c79')">Marinho</button>
+        <div id="quiz"></div>
+
+        <button onclick="corrigirQuiz()">Finalizar Quiz</button>
+
+        <p id="resultado"></p>
+        </section>
+
+        <section id="contato">
+    <h2>Contato</h2>
+
+    <form onsubmit="return validarFormulario()">
+        <input type="text" id="nome" placeholder="Nome">
+        <br><br>
+
+        <input type="email" id="email" placeholder="E-mail">
+        <br><br>
+
+        <textarea id="mensagem" placeholder="Mensagem"></textarea>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
 
     </main>
 
@@ -125,5 +155,6 @@
         <p class="text">Copyright &copy; 2026</p>
         <h6 class="text">Desenvolvido por: Victor David Mita Mamani - RM571973</h6>
     </footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/quiz.js"></script>
 </body>
-</htm
