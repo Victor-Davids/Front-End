@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Variáveis de Cores */
+  --primary: #000020;
+  --secondary: #ff9800;
+  --tertiary: #2f2c79;
+  --light: #F9F9F9;
+  --dark: #000001;
+
+  /* Variáveis de Fonte - Títulos */
+  --title: 'Noto Serif', Trebuchet MS, sans-serif;
+  --title-size: 46px;
+  
+  /* Variáveis de Fonte - Textos */
+  --text: 'Montserrat', Roboto, Calibri;
+  --text-size: 18px;
+}
+
+/* Formatação dos Títulos */
+.title {
+  color: var(--primary);
+  font-family: var(--title);
+  font-size: var(--title-size);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.collumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
